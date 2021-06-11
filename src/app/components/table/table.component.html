@@ -1,0 +1,20 @@
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Word Count</th>
+      <th scope="col">Snippet</th>
+    </tr>
+  </thead>
+  <tbody>
+
+<tr *ngFor="let wiks of wik">
+      <td scope="row"><a [href]="'https://en.wikipedia.org/wiki/'+wiks.title" target="_blank">{{wiks.title }} </a></td>
+      <td>{{wiks.wordcount }}</td>
+      <td [innerHTML]="wiks.snippet"></td>
+</tr>      
+  </tbody>
+</table>
+
