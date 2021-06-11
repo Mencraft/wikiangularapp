@@ -7,4 +7,7 @@ export interface Wiki {
   export interface search {
     ns?: string;
     title?: string;
+    wordcount?:string;
+    snippet?:string
+
 }
